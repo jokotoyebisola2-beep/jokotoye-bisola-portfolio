@@ -1,0 +1,91 @@
+{
+  "entities": {
+    "projects": {
+      "title": "Projects",
+      "description": "Portfolio projects managed in JB Studio CMS",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "category": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "description": { "type": "string" },
+        "technologies": { "type": "array", "items": { "type": "string" } },
+        "image": { "type": "string" },
+        "gallery": { "type": "array", "items": { "type": "string" } },
+        "liveDemoUrl": { "type": "string" },
+        "githubUrl": { "type": "string" },
+        "completionDate": { "type": "string" },
+        "client": { "type": "string" },
+        "status": { "type": "string", "enum": ["draft", "preview", "published", "archived"] },
+        "featured": { "type": "boolean" },
+        "order": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "slug", "category", "subtitle", "status"]
+    },
+    "services": {
+      "title": "Services",
+      "description": "Services offered by Jokotoye Bisola",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "icon": { "type": "string" },
+        "status": { "type": "string", "enum": ["active", "inactive"] },
+        "order": { "type": "number" }
+      },
+      "required": ["title", "description", "icon", "status"]
+    },
+    "reviews": {
+      "title": "Reviews",
+      "description": "Client reviews and testimonials",
+      "type": "object",
+      "properties": {
+        "author": { "type": "string" },
+        "role": { "type": "string" },
+        "company": { "type": "string" },
+        "quote": { "type": "string" },
+        "avatar": { "type": "string" },
+        "rating": { "type": "number" },
+        "resultsAchieved": { "type": "string" },
+        "projectContext": { "type": "string" },
+        "status": { "type": "string", "enum": ["published", "draft"] },
+        "order": { "type": "number" }
+      },
+      "required": ["author", "quote", "rating", "status"]
+    },
+    "messages": {
+      "title": "Messages",
+      "description": "Contact form submissions from visitors",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "date": { "type": "string" },
+        "status": { "type": "string", "enum": ["unread", "read", "archived"] }
+      },
+      "required": ["name", "email", "message"]
+    },
+    "settings": {
+      "title": "Website Settings",
+      "description": "Global website copy and settings",
+      "type": "object",
+      "properties": {
+        "heroHeadline": { "type": "string" },
+        "heroSubheadline": { "type": "string" },
+        "professionalTitle": { "type": "string" },
+        "brandStatement": { "type": "string" },
+        "whatsappNumber": { "type": "string" },
+        "email": { "type": "string" },
+        "logoUrl": { "type": "string" },
+        "profilePhotoUrl": { "type": "string" },
+        "resumeUrl": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}

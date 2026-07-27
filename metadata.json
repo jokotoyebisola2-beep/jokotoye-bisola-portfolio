@@ -1,0 +1,6 @@
+{
+  "name": "Jokotoye Bisola - Portfolio & JB Studio CMS",
+  "description": "Public portfolio website for Jokotoye Bisola and JB Studio CMS admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
